@@ -44,4 +44,14 @@ export const Container = styled.div`
 		gap: 16px;
 		margin-top: 2rem;
 	}
+
+	@media (min-width: 1024px) {
+		width: 65%;
+		margin: 0 auto;
+
+		.categories {
+			justify-content: flex-start;
+			gap: 1rem;
+		}
+	}
 `;

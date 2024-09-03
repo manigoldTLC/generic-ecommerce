@@ -42,4 +42,12 @@ export const Container = styled.div`
 			color: ${theme.colors.grey13};
 		}
 	}
+
+	@media (min-width: 1024px) {
+		transition: 0.3s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
 `;

@@ -3,7 +3,7 @@ import theme from "../../styles/theme";
 
 export const Container = styled.div`
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	background-color: ${theme.colors.grey13};
 	border-radius: 44px;
@@ -17,14 +17,15 @@ export const Container = styled.div`
 	z-index: 1000;
 	width: calc(100% - 3rem);
 
-	.container-icon {
+	.container-button {
 		display: flex;
-		justify-content: center;
 		align-items: center;
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		background-color: rgba(255, 255, 255, 0.2);
+		gap: 8px;
+
+		&__text {
+			font-weight: bold;
+			color: ${theme.colors.grey2};
+		}
 	}
 
 	@media (min-width: 1024px) {

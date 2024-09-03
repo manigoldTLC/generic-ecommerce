@@ -1,6 +1,12 @@
+import Category from "./components/Category";
+import Home from "./pages/Home";
+
+
 function App() {
 	return (
-		<p>Olá mundo</p>
+		<>
+			<Home />
+		</>
 	);
 }
 

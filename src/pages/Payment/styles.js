@@ -6,7 +6,7 @@ export const Container = styled.div`
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 16px 0 48px;
+		margin: 16px 16px 48px;
 
 		&__box {
 			width: 40px;

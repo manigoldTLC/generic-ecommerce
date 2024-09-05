@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-	padding: 2rem 1.5rem;
 
 	.header {
 		display: flex;
@@ -46,9 +45,6 @@ export const Container = styled.div`
 	}
 
 	@media (min-width: 1024px) {
-		width: 65%;
-		margin: 0 auto;
-
 		.categories {
 			justify-content: flex-start;
 			gap: 1rem;

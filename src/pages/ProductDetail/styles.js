@@ -2,7 +2,6 @@ import styled from "styled-components";
 import theme from "../../styles/theme";
 
 export const Container = styled.div`
-	padding: 2rem 1.5rem;
 
 	.header-detail {
 		display: flex;

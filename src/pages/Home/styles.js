@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "../../styles/theme";
 
 export const Container = styled.div`
 
@@ -9,16 +10,16 @@ export const Container = styled.div`
 
 		&__texts {
 			&__subtitle {
-				font-size: 1rem;
-				color: #292526;
-				margin-left: 5px;
+				font-size: 12px;
+				font-weight: 400;
+				color: ${theme.colors.grey4};
 			}
 
 			&__title {
-				font-size: 2rem;
-				font-weight: 600;
-				color: #292526;
-				margin-top: 1rem;
+				font-size: 16px;
+				font-weight: bold;
+				color: ${theme.colors.grey10};
+				margin-top: 10px;
 			}
 		}
 

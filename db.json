@@ -3,7 +3,7 @@
 		{
 			"id": 1,
 			"name": "Camiseta Moderna",
-			"category": "T-shirt",
+			"category": "Camisetas",
 			"price": 199.99,
 			"image": "https://images.unsplash.com/photo-1522724514897-24b0eb7ba3ea?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"description": "Camiseta leve e moderna feita de algodão.",
@@ -23,7 +23,7 @@
 		{
 			"id": 2,
 			"name": "Vestido Elegante",
-			"category": "Dress",
+			"category": "Vestidos",
 			"price": 249.99,
 			"image": "https://images.unsplash.com/photo-1562964568-192c14d85b6a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"description": "Vestido elegante para ocasiões especiais.",
@@ -42,7 +42,7 @@
 		{
 			"id": 3,
 			"name": "Calça Jeans",
-			"category": "Pants",
+			"category": "Calças",
 			"price": 129.99,
 			"image": "https://plus.unsplash.com/premium_photo-1691367279313-71af7ba83f2d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"description": "Calça jeans confortável para o dia a dia.",
@@ -61,7 +61,7 @@
 		{
 			"id": 4,
 			"name": "Sapato Social",
-			"category": "Shoes",
+			"category": "Sapatos",
 			"price": 299.99,
 			"image": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"description": "Sapato social clássico, ideal para eventos formais.",
@@ -117,7 +117,7 @@
 		{
 			"id": 7,
 			"name": "Relógio de Pulso",
-			"category": "Accessories",
+			"category": "Acessórios",
 			"price": 699.99,
 			"image": "https://images.unsplash.com/photo-1461141346587-763ab02bced9?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"description": "Relógio de pulso moderno com pulseira de couro.",
@@ -133,7 +133,7 @@
 		{
 			"id": 8,
 			"name": "Óculos de Sol",
-			"category": "Accessories",
+			"category": "Acessórios",
 			"price": 249.99,
 			"image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"description": "Óculos de sol com proteção UV e design moderno.",
@@ -149,7 +149,7 @@
 		{
 			"id": 9,
 			"name": "Chapéu Fedora",
-			"category": "Accessories",
+			"category": "Acessórios",
 			"price": 99.99,
 			"image": "https://plus.unsplash.com/premium_photo-1671571592084-1fef547e09b5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"description": "Chapéu estilo fedora, elegante e casual.",
@@ -166,7 +166,7 @@
 		{
 			"id": 10,
 			"name": "Tênis Esportivo",
-			"category": "Shoes",
+			"category": "Sapatos",
 			"price": 249.99,
 			"image": "https://images.unsplash.com/photo-1511556670410-f6989d6b0766?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"description": "Tênis esportivo leve e confortável para atividades físicas.",
@@ -201,7 +201,7 @@
 	],
 	"checkout": {
 		"shipping_info": {
-			"address": "Av. Paulista, 1000, São Paulo, Brasil",
+			"adVestidos": "Av. Paulista, 1000, São Paulo, Brasil",
 			"method": "Envio Grátis"
 		},
 		"payment": {

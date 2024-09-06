@@ -17,10 +17,23 @@ const Home = () => {
 	const [products, setProducts] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
 
+	// const getProducts = async () => {
+	// 	try {
+	// 		const response = await api.get('/products');
+	// 		setProducts(response.data);
+	// 		setIsLoading(false);
+	// 	} catch (error) {
+	// 		console.error(error);
+	// 		setIsLoading(false);
+	// 	}
+	// }
+
 	const getProducts = async () => {
 		try {
-			const response = await api.get('/products');
-			setProducts(response.data);
+			const response = await api.get(''); // Omitir '/products' porque você está pegando o JSON inteiro
+			const allData = response.data; // O JSON completo será carregado
+			const products = allData.products; // Acesse os produtos dentro do JSON
+			setProducts(products);
 			setIsLoading(false);
 		} catch (error) {
 			console.error(error);

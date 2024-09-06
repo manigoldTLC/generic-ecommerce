@@ -17,20 +17,25 @@ const ProductDetail = () => {
 
 	const [increment, setIncrement] = useState(1);
 
-	const sumIncrement = () => {
-		setIncrement(increment + 1);
-	}
-
-	const subtractIncrement = () => {
-		if (increment > 1) {
-			setIncrement(increment - 1);
-		}
-	}
+	// const fetchProduct = async () => {
+	// 	try {
+	// 		const response = await api.get(`/products/${id}`);
+	// 		setProduct(response.data);
+	// 		setIsLoading(false);
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 		setIsLoading(false);
+	// 	}
+	// };
 
 	const fetchProduct = async () => {
 		try {
-			const response = await api.get(`/products/${id}`);
-			setProduct(response.data);
+			const response = await api.get('');
+			const allData = response.data; // Carregar o JSON completo
+			const product = allData.products.find(p => p.id === parseInt(id));
+			if (product) {
+				setProduct(product);
+			}
 			setIsLoading(false);
 		} catch (error) {
 			console.log(error);
@@ -41,6 +46,16 @@ const ProductDetail = () => {
 	useEffect(() => {
 		fetchProduct();
 	}, [id]);
+
+	const sumIncrement = () => {
+		setIncrement(increment + 1);
+	}
+
+	const subtractIncrement = () => {
+		if (increment > 1) {
+			setIncrement(increment - 1);
+		}
+	}
 
 	const handleAddItem = () => {
 		let price = product.price;

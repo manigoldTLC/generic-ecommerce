@@ -1,24 +1,26 @@
 import React from 'react';
-import { ReactComponent as HomeIcon } from '../../assets/icons/home-icon.svg';
-import { ReactComponent as BagIcon } from '../../assets/icons/bag-icon.svg';
-import { ReactComponent as HeartIcon } from '../../assets/icons/heart-icon.svg';
-import { ReactComponent as ProfileIcon } from '../../assets/icons/person-icon.svg';
+import {
+	HiOutlineHome,
+	HiOutlineHeart,
+	HiOutlineUser,
+	HiOutlineShoppingBag
+} from "react-icons/hi";
 import { Container } from './styles';
 
 const BottomNavigation = () => {
   return (
 	<Container>
 		<div className='container-icon'>
-			<HomeIcon />
+			<HiOutlineHome size={26} color='#fff' />
 		</div>
 		<div className='container-icon'>
-			<BagIcon />
+			<HiOutlineShoppingBag size={26} color='#fff' />
 		</div>
 		<div className='container-icon'>
-			<HeartIcon />
+			<HiOutlineHeart size={26} color='#fff' />
 		</div>
 		<div className='container-icon'>
-			<ProfileIcon />
+			<HiOutlineUser size={26} color='#fff' />
 		</div>
 	</Container>
   );

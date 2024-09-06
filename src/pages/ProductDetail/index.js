@@ -1,35 +1,77 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from './styles';
 import CardProductDetail from '../../components/CardProductDetail';
 import ChooseSize from '../../components/ChooseSize';
 import ChooseColor from '../../components/ChooseColor';
 import BottomNavigationDetail from '../../components/BottomNavigationDetail';
 import AddItem from '../../components/AddItem';
+import { useParams } from 'react-router-dom';
+import { api } from '../../utils/api';
+
 
 const ProductDetail = () => {
+
+	const { id } = useParams();
+	const [product, setProduct] = useState({});
+	const [isLoading, setIsLoading] = useState(true);
+
+	const [increment, setIncrement] = useState(1);
+
+	const sumIncrement = () => {
+		setIncrement(increment + 1);
+	}
+
+	const subtractIncrement = () => {
+		if (increment > 1) {
+			setIncrement(increment - 1);
+		}
+	}
+
+	const fetchProduct = async () => {
+		try {
+			const response = await api.get(`/products/${id}`);
+			setProduct(response.data);
+			setIsLoading(false);
+		} catch (error) {
+			console.log(error);
+			setIsLoading(false);
+		}
+	};
+
+	useEffect(() => {
+		fetchProduct();
+	}, [id]);
+
+	const handleAddItem = () => {
+		let price = product.price;
+		let calc = price * increment;
+
+		return calc.toPrecision(5);
+	}
+
+
 	return (
 		<Container>
-			<CardProductDetail />
+			{isLoading && <p className='loading'>Carregando...</p>}
+			<CardProductDetail image={product.image} />
 
 			<div className='header-detail'>
-				<h1 className='header-detail__title'>Modern Light Clothes</h1>
-				<AddItem />
+				<h1 className='header-detail__title'>{product.name}</h1>
+				<AddItem
+					increment={increment}
+					sumIncrement={sumIncrement}
+					subtractIncrement={subtractIncrement}
+				/>
 			</div>
 
-			<p className='middle-detail'>
-				Its simple and elegant shape makes it perfect for
-				those of you who like you who want minimalist
-				clothes. Its simple and elegant shape makes it perfect for
-				those of you who like you who want minimalist
-				clothes.
-			</p>
+			<p className='middle-detail'>{product.description}</p>
 
 			<div className='bottom-detail'>
-				<ChooseSize />
+				{product.sizes && <ChooseSize sizes={product.sizes} />}
 				<ChooseColor />
 			</div>
 
-			<BottomNavigationDetail />
+			<BottomNavigationDetail price={handleAddItem()} />
 		</Container>
 	);
 }

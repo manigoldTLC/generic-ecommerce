@@ -1,19 +1,7 @@
 import React, { useState } from 'react';
 import { Container } from './styles';
 
-const AddItem = () => {
-
-	const [increment, setIncrement] = useState(1);
-
-	const sumIncrement = () => {
-		setIncrement(increment + 1);
-	}
-
-	const subtractIncrement = () => {
-		if (increment > 1) {
-			setIncrement(increment - 1);
-		}
-	}
+const AddItem = ({ increment, sumIncrement, subtractIncrement }) => {
 
 	return (
 		<Container>

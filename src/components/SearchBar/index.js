@@ -12,7 +12,7 @@ const SearchBar = () => {
 		<Container>
 			<SearchContainer>
 				<SearchIcon />
-				<input type="text" placeholder="Search clothes..." />
+				<input type="text" placeholder="Pesquisar..." />
 			</SearchContainer>
 
 			<FilterContainer>

@@ -1,0 +1,218 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Camiseta Moderna",
+			"category": "T-shirt",
+			"price": 199.99,
+			"image": "https://images.unsplash.com/photo-1522724514897-24b0eb7ba3ea?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"description": "Camiseta leve e moderna feita de algodão.",
+			"sizes": [
+				"P",
+				"M",
+				"G",
+				"XG"
+			],
+			"colors": [
+				"Preto",
+				"Branco",
+				"Azul"
+			],
+			"stock": 50
+		},
+		{
+			"id": 2,
+			"name": "Vestido Elegante",
+			"category": "Dress",
+			"price": 249.99,
+			"image": "https://images.unsplash.com/photo-1562964568-192c14d85b6a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"description": "Vestido elegante para ocasiões especiais.",
+			"sizes": [
+				"P",
+				"M",
+				"G"
+			],
+			"colors": [
+				"Vermelho",
+				"Preto",
+				"Verde"
+			],
+			"stock": 20
+		},
+		{
+			"id": 3,
+			"name": "Calça Jeans",
+			"category": "Pants",
+			"price": 129.99,
+			"image": "https://plus.unsplash.com/premium_photo-1691367279313-71af7ba83f2d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"description": "Calça jeans confortável para o dia a dia.",
+			"sizes": [
+				"38",
+				"40",
+				"42",
+				"44"
+			],
+			"colors": [
+				"Azul Claro",
+				"Azul Escuro"
+			],
+			"stock": 35
+		},
+		{
+			"id": 4,
+			"name": "Sapato Social",
+			"category": "Shoes",
+			"price": 299.99,
+			"image": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"description": "Sapato social clássico, ideal para eventos formais.",
+			"sizes": [
+				"39",
+				"40",
+				"41",
+				"42",
+				"43"
+			],
+			"colors": [
+				"Preto",
+				"Marrom"
+			],
+			"stock": 10
+		},
+		{
+			"id": 5,
+			"name": "Jaqueta de Couro",
+			"category": "Jacket",
+			"price": 499.99,
+			"image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"description": "Jaqueta de couro estilosa e durável.",
+			"sizes": [
+				"P",
+				"M",
+				"G",
+				"XG"
+			],
+			"colors": [
+				"Preto"
+			],
+			"stock": 15
+		},
+		{
+			"id": 6,
+			"name": "Blusa de Moletom",
+			"category": "Hoodie",
+			"price": 149.99,
+			"image": "https://images.unsplash.com/photo-1685328403732-64be6bb9d112?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"description": "Blusa de moletom confortável e quente.",
+			"sizes": [
+				"P",
+				"M"
+			],
+			"colors": [
+				"Cinza",
+				"Preto",
+				"Branco"
+			],
+			"stock": 40
+		},
+		{
+			"id": 7,
+			"name": "Relógio de Pulso",
+			"category": "Accessories",
+			"price": 699.99,
+			"image": "https://images.unsplash.com/photo-1461141346587-763ab02bced9?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"description": "Relógio de pulso moderno com pulseira de couro.",
+			"sizes": [
+				"P"
+			],
+			"colors": [
+				"Marrom",
+				"Preto"
+			],
+			"stock": 25
+		},
+		{
+			"id": 8,
+			"name": "Óculos de Sol",
+			"category": "Accessories",
+			"price": 249.99,
+			"image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"description": "Óculos de sol com proteção UV e design moderno.",
+			"sizes": [
+				"P"
+			],
+			"colors": [
+				"Preto",
+				"Dourado"
+			],
+			"stock": 30
+		},
+		{
+			"id": 9,
+			"name": "Chapéu Fedora",
+			"category": "Accessories",
+			"price": 99.99,
+			"image": "https://plus.unsplash.com/premium_photo-1671571592084-1fef547e09b5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"description": "Chapéu estilo fedora, elegante e casual.",
+			"sizes": [
+				"M",
+				"G"
+			],
+			"colors": [
+				"Preto",
+				"Cinza"
+			],
+			"stock": 20
+		},
+		{
+			"id": 10,
+			"name": "Tênis Esportivo",
+			"category": "Shoes",
+			"price": 249.99,
+			"image": "https://images.unsplash.com/photo-1511556670410-f6989d6b0766?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"description": "Tênis esportivo leve e confortável para atividades físicas.",
+			"sizes": [
+				"39",
+				"40",
+				"41",
+				"42",
+				"43"
+			],
+			"colors": [
+				"Branco",
+				"Azul",
+				"Preto"
+			],
+			"stock": 45
+		}
+	],
+	"cart": [
+		{
+			"productId": 2,
+			"quantity": 1
+		},
+		{
+			"productId": 7,
+			"quantity": 2
+		},
+		{
+			"productId": 3,
+			"quantity": 1
+		}
+	],
+	"checkout": {
+		"shipping_info": {
+			"address": "Av. Paulista, 1000, São Paulo, Brasil",
+			"method": "Envio Grátis"
+		},
+		"payment": {
+			"card": "MasterCard",
+			"number": "**** **** **** 1234"
+		},
+		"summary": {
+			"total_items": 4,
+			"shipping_fee": 0.0,
+			"discount": 50.0,
+			"subtotal": 1399.96
+		}
+	}
+}

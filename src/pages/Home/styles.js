@@ -34,8 +34,19 @@ export const Container = styled.div`
 	}
 
 	.categories {
-		display: flex;
-		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+
+		.slick-track {
+			display: flex;
+			max-width: 100%;
+
+			.slick-slide:not(:first-child) {
+				margin-left: 10px;
+			}
+		}
+		
 	}
 
 	.grid-cards {

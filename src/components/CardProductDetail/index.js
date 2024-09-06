@@ -1,11 +1,10 @@
 import React from 'react';
-import img1 from '../../assets/images/img1.png';
 import { ReactComponent as ArrowDownIcon } from '../../assets/icons/arrow-back-icon.svg';
 import { ReactComponent as HeartIcon } from '../../assets/icons/heart-filled-black-icon.svg';
 import { Container } from './styles';
 import { Link } from 'react-router-dom';
 
-const CardProductDetail = () => {
+const CardProductDetail = ({ image }) => {
 	return (
 		<Container>
 			<div className='container-icons'>
@@ -16,7 +15,7 @@ const CardProductDetail = () => {
 					<HeartIcon />
 				</div>
 			</div>
-			<img src={img1} alt="Product" />
+			<img src={image} alt="Product" />
 		</Container>
 	);
 }
